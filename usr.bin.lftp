@@ -1,0 +1,21 @@
+# Last Modified: Fri Jan 22 16:25:08 2016
+#include <tunables/global>
+
+/usr/bin/lftp {
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+
+
+  / r,
+  /etc/inputrc r,
+  /etc/lftp.conf r,
+  owner /home/*/[^.]*/[^.]* rw,
+  owner /home/*/[^.]* rw,
+  owner /home/*/.lftp/cwd_history rwk,
+  owner /home/*/.lftp/rl_history rw,
+  owner /home/*/.lftp/transfer_log w,
+  owner /home/*/spivt2/lftp rw,
+  owner /home/*/share/lftp/* rw,
+  /usr/bin/lftp mr,
+
+}
