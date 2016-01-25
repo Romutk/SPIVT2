@@ -9,13 +9,13 @@
   / r,
   /etc/inputrc r,
   /etc/lftp.conf r,
+ owner /home/*/[^.]*/[^.]*/* rw,
   owner /home/*/[^.]*/[^.]* rw,
   owner /home/*/[^.]* rw,
-  owner /home/*/.lftp/cwd_history rwk,
-  owner /home/*/.lftp/rl_history rw,
-  owner /home/*/.lftp/transfer_log w,
-  owner /home/*/spivt2/lftp rw,
-  owner /home/*/share/lftp/* rw,
+  owner /home/*/.lftp/* rwk,
+  owner /home/*/lftp/* rw,
+  owner /root/[^.]*/[^.]* rw,
+  owner /root/[^.]* rw,
   /usr/bin/lftp mr,
 
 }
