@@ -9,7 +9,7 @@
   / r,
   /etc/inputrc r,
   /etc/lftp.conf r,
- owner /home/*/[^.]*/[^.]*/.* rw,
+  owner /home/*/[^.]*/[^.]*/** rw,
   owner /home/*/[^.]*/[^.]* rw,
   owner /home/*/[^.]* rw,
   owner /home/*/.lftp/* rwk,
