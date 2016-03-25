@@ -14,8 +14,6 @@
   owner /home/*/[^.]* rw,
   owner /home/*/.lftp/* rwk,
   owner /home/*/lftp/* rw,
-  owner /root/[^.]*/[^.]* rw,
-  owner /root/[^.]* rw,
   /usr/bin/lftp mr,
 
 }
